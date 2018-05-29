@@ -10,7 +10,7 @@
 
         </div>
         <div class="col-md-2">
-          <button class="btn btn-info align-right" routerLink="/product/create">Add new </button>
+          <button class="btn btn-info align-right" routerLink="/dashboard/product/create">Add new </button>
 
 
         </div>
@@ -26,23 +26,36 @@
         <thead>
           <tr>
             <th>#</th>
-            <th>image</th>
+            <!-- <th>image</th> -->
             <th>name</th>
             <th>price</th>
-            <th>quantity</th>
+            <th>cost</th>
+            <th>rating</th>
+            <th>category id</th>
+            <th>sub category id</th>
+            <th>group id</th>
             <th>action</th>
+
+
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let product of productsData ">
             <td>{{product.id}}</td>
-            <td>{{product.image}}</td>
+            <!-- <td>{{product.image}}</td> -->
             <td>{{product.name}}</td>
             <td>{{product.price}}</td>
-            <td>{{product.quantity}}</td>
+            <td>{{product.cost}}</td>
+            <td>{{product.rating}}</td>
+            <td>{{product.category_id}}</td>
+            <td>{{product.subCategory_id}}</td>
+            <td>{{product.group_id}}</td>
+
+
+
             <td>
-              <button class="btn btn-info ">details</button>
-              <button class="btn btn-warning  ">edit</button>
+              <button class="btn btn-info " [routerLink]="['/dashboard/product/detail',product.id]">detail</button>
+              <button class="btn btn-warning " [routerLink]="['/dashboard/product/edit',product.id]">edit</button>
 
               <ng-template #popTemplate>
                 Are You sure To delete?
@@ -51,7 +64,8 @@
 
 
               </ng-template>
-              <button type="button" class="btn btn-danger" [popover]="popTemplate" popoverTitle="Confirm Delete" [outsideClick]='true'>
+              <button type="button" class="btn btn-danger" [popover]="popTemplate" popoverTitle="Confirm Delete"
+                [outsideClick]='true'>
 
 
                 TemplateRef binding

@@ -10,7 +10,7 @@
 
         </div>
         <div class="col-md-2">
-          <button class="btn btn-info align-right" routerLink="/product">Product List</button>
+          <button class="btn btn-info align-right" routerLink="/dashboard/product">Product List</button>
 
 
         </div>
@@ -31,7 +31,7 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter name" formControlName="name">
+                <input type="text" class="form-control" id="name" placeholder="Enter Name" formControlName="name">
 
 
                 <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -42,11 +42,76 @@
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label for="quantity">Quantity</label>
-                <input formControlName="quantity" type="number" class="form-control" id="quantity" placeholder="Enter quantity">
+                <label for="price">Price</label>
+                <input formControlName="price" type="number" class="form-control" id="price" placeholder="Enter Price">
 
 
-                <small id="quantityHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small id="priceHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+
+
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="cost">Cost</label>
+                <input formControlName="cost" type="number" class="form-control" id="cost" placeholder="Enter Cost">
+
+
+                <small id="costeHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+
+
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="rating">Rating</label>
+                <input formControlName="rating" type="number" class="form-control" id="rating" placeholder="Enter Rating">
+
+
+                <small id="ratingHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+
+
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="category_id">Category_id</label>
+                <input formControlName="category_id" type="number" class="form-control" id="category_id" placeholder="Enter Category Id">
+
+
+                <small id="category_idHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+
+
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="subCategory_id">SubCategory Id</label>
+                <input formControlName="subCategory_id" type="number" class="form-control" id="subCategory_id" placeholder="Enter Subcategory Id">
+
+
+                <small id="subCategory_idHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+
+
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="group_id">Group Id</label>
+                <input formControlName="group_id" type="number" class="form-control" id="group_id" placeholder="Enter Group Id">
+
+
+                <small id="group_idHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
 
 
